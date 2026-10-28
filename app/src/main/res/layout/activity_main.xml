@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creació d'usuari"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <EditText
+        android:id="@+id/editUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nom d'usuari"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <EditText
+        android:id="@+id/editUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="URL"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editBio"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/textMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Correu Electrònic"
+        app:layout_constraintBottom_toTopOf="@+id/editMail"
+        app:layout_constraintStart_toStartOf="@+id/editMail" />
+
+    <TextView
+        android:id="@+id/textUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Nom d'usuari"
+        app:layout_constraintBottom_toTopOf="@+id/editUser"
+        app:layout_constraintStart_toStartOf="@+id/editUser" />
+
+    <TextView
+        android:id="@+id/textBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Descripció"
+        app:layout_constraintBottom_toTopOf="@+id/editBio"
+        app:layout_constraintStart_toStartOf="@+id/editBio" />
+
+    <TextView
+        android:id="@+id/textUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="Imatge de perfil"
+        app:layout_constraintBottom_toTopOf="@+id/editUrl"
+        app:layout_constraintStart_toStartOf="@+id/editUrl" />
+
+    <EditText
+        android:id="@+id/editBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Descripció"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMail"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUser"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
