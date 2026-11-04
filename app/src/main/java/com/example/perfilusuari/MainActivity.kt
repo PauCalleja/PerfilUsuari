@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-
         val btn = findViewById<Button>(R.id.btn)
         val editUser = findViewById<EditText>(R.id.editUser)
         val editMail = findViewById<EditText>(R.id.editMail)
@@ -30,10 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener {
             val nextPantalla = Intent(this, ProfileActivity::class.java)
-            nextPantalla.putExtra("user", editUser.text)
-            nextPantalla.putExtra("mail", editMail.text)
-            nextPantalla.putExtra("img", editUrl.text)
-            nextPantalla.putExtra("bio", editBio.text)
+            nextPantalla.putExtra("user", editUser.text.toString())
+            nextPantalla.putExtra("mail", editMail.text.toString())
+            nextPantalla.putExtra("img", editUrl.text.toString())
+            nextPantalla.putExtra("bio", editBio.text.toString())
             startActivity(nextPantalla)
         }
     }
