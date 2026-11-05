@@ -29,9 +29,8 @@ class ProfileActivity : AppCompatActivity() {
         intent.getStringExtra("mail").apply { mailtxt.text = "$this" }
         intent.getStringExtra("bio").apply { biotxt.text = "$this" }
 
-
         Glide.with(imageView)
-           .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/196.png")
+           .load(intent.getStringExtra("img"))
            .into(imageView)
     }
 }
